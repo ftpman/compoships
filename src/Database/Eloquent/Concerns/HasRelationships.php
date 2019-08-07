@@ -24,7 +24,7 @@ trait HasRelationships
             $keys = [];
 
             foreach ($keyName as $key) {
-                $keys[] = $this->getTable().$key;
+                $keys[] = $this->getTable().'.'.$key;
             }
 
             return $keys;
